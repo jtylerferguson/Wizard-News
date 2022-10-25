@@ -2,6 +2,7 @@
 const express = require("express");
 const morgan = require("morgan")
 const postBank = require("./postBank")
+const timeAgo = require("node-time-ago")
 const app = express();
 app.use(morgan('dev'));
 app.use(express.static('public'))
